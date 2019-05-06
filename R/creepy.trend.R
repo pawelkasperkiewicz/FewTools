@@ -3,7 +3,7 @@ creepy.trend <- function(vector, k, parallel = FALSE) {
   
   if (parallel) {
     
-    library(doParallel)
+    library(doParallel, quietly = T)
     Clust <- makeCluster (detectCores(), type = "PSOCK")
     registerDoParallel(Clust)
     table <- data.frame(matrix(nrow = length(vector), ncol = (length(vector) - k + 1)))
