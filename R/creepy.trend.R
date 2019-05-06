@@ -19,7 +19,8 @@ creepy.trend <- function(vector, k, parallel = FALSE) {
     }
     
     smoothed.values <- apply(table, 1, mean, na.rm = TRUE) 
-   
+    stopCluster(Clust)
+    gc(verbose = F)
     return(smoothed.values)
   }
   
