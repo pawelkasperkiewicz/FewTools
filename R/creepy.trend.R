@@ -16,13 +16,12 @@ Creepy.trend <- function(vector, k, parallel = FALSE) {
       end <- sample(NA, length(vector) - k - length(begin), replace = TRUE)
       table <- c(begin, model$fitted.values, end)
     }
-<<<<<<< HEAD
+
 
     smoothed.values <- apply(table, 1, mean, na.rm = TRUE)
-=======
-    
-    smoothed.values <- apply(table, 1, mean, na.rm = TRUE) 
->>>>>>> ac69fdb7a213bc1a4dda6fbd779208eda6c2dd5e
+
+    smoothed.values <- apply(table, 1, mean, na.rm = TRUE)
+
     stopCluster(Clust)
     gc(verbose = F)
     return(smoothed.values)
