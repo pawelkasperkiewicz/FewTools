@@ -3,7 +3,7 @@ Type: Package
 Title: Few practical tools from simple totals in summary to advanced generators for deep learning
 Version: 0.1.1
 Author: Paweł Kasperkiewicz
-Maintainer: logim250@gmail.com
+Maintainer: <logim250@gmail.com>
 Description: 
 License: Free
 Encoding: UTF-8
